@@ -11,6 +11,7 @@ package moduleFour;
 public class Main {
     
     public static void main(String[] args){
+        /*
         Student john = new Student("John",4.0,"Unknown");
         Student ram = new Student("Ram");
         john.setMajor("CS");
@@ -21,6 +22,10 @@ public class Main {
         System.out.println(john);
         ram.setName("Shyam");
         System.out.println(ram);
+        */
+        Student<Double> s = new Student<Double>("X", 5.5, "CS");
+        System.out.println(s.getGpa());
+                
         
         
     }

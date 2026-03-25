@@ -8,19 +8,19 @@ package moduleFour;
  *
  * @author RLAL
  */
-public class Student {
+public class Student<T> {
     // Attributes
     private String name;
-    private double gpa;
+    private T gpa;
     private String major;
     // No-argument constructor
     public Student(){
         name = "Unknown";
-        gpa = 0.0;
+        gpa = null;
         major = "Unknown";
     }
     // Parameterized constructor
-    public Student(String name, double gpaIn, String majorIn){
+    public Student(String name, T gpaIn, String majorIn){
         this.name = name;
         gpa = gpaIn;
         major = majorIn;
@@ -28,7 +28,7 @@ public class Student {
     public Student(String nameIn){
         name = nameIn;
     }
-    public Student(double gpaIn){
+    public Student(T gpaIn){
         gpa = gpaIn;
     }
     // Accessor or Getter methods
@@ -36,7 +36,7 @@ public class Student {
         return name;
     }
     
-    public double getGpa(){
+    public T getGpa(){
         return gpa;
     }
     
@@ -49,7 +49,7 @@ public class Student {
         this.name = name;
     }
     
-    public void setGpa(double gpaIn){
+    public void setGpa(T gpaIn){
         gpa = gpaIn;
     }
     
