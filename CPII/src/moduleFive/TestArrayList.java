@@ -14,7 +14,14 @@ public class TestArrayList {
     
     public static void main(String[] agrs){
         ArrayList<Integer> list = new ArrayList<Integer>();
+        //
+        Integer x1 = new Integer(5);
+        list.add(x1);
+        // or
+        list.add(new Integer(5));
+        
         // add 5 in the list
+        
         list.add(5);
         list.add(10);
         list.add(15);
