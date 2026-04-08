@@ -61,11 +61,12 @@ public class Employee {
     
     @Override
     public boolean equals(Object obj){
-        Employee emp = (Employee) obj;
-        if (this.getFullName().equals(emp.getFullName()))
-            return true;
-        else
-            return false;
+        Employee emp =null;
+        if (obj instanceof Employee)
+            emp = (Employee) obj;
+            if (this.getFullName().equals(emp.getFullName()))
+                return true;
+        return false;
     
     }
     
